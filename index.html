@@ -9,74 +9,79 @@
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self';">
     <title>Lucas Malik's Portfolio</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS Files/main.css" media="screen">
 </head>
 
-<body id="clicked">
+<body>
     <header>
         <div class="container nav-bar">
             <h1 class="Title-name"><a href="#">Lucas Malik</a></h1>
             <nav class="desktop-ul">
                 <ul>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#dissertation">Portfolio</a></li>
+                    <li><a href="#dissertation">Dissertation</a></li>
                     <li class="Journey-li"><a href="#journey">My Journey</a></li>
+                </ul>
+            </nav>
+            <nav class="dropdown-ul">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#dissertation">Portfolio</a></li>
+                    <li><a href="#dissertation">Dissertation</a></li>
+                    <li><a href="#journey">My Journey</a></li>
                 </ul>
             </nav>
             <div class="toggle-button">
                 <span>&#9776;</span>
             </div>
         </div>
-        <nav class="dropdown-ul">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#journey">My Journey</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section id="hero">
         <div class="hero-content">
-            <img src="Photos/Lucas.png" alt="Lucas Malik" class="profile-pic">
             <h2>Lucas Malik</h2>
-            <p>Cybersecurity & Web Dev Student</p>
+            <p class="subtitle">Cybersecurity & Web Development</p>
             <div class="social-icons">
-                <a href="mailto:lucasmalik04@gmail.com?subject=Html" target="_blank" aria-label="Email me"><img src="Icon Folder/icons8-gmail-48.png" alt="Gmail"></a>
-                <a href="https://github.com/EXL-1" target="_blank" aria-label="Visit my GitHub profile"><img src="Icon Folder/icons8-github-48.png"
-                        alt="Github"></a>
-                <a href="https://www.linkedin.com/in/lucas-malik/" target="_blank" aria-label="Visit my LinkedIn Page"><img src="Icon Folder\icons8-linkedin-48.png"
-                        alt="LinkedIn"></a>
-                <a href="https://www.youtube.com/channel/UCgtdIGl4dm1Unb5WddtaEIg" target="_blank" aria-label="Visit my YouTube channel"><img src="Icon Folder/icons8-youtube-48.png"
-                        alt="YouTube"></a>
+                <a href="mailto:lucasmalik04@gmail.com"><img src="Icon Folder/icons8-gmail-48.png" alt="Gmail"></a>
+                <a href="https://github.com/EXL-1"><img src="Icon Folder/icons8-github-48.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/lucas-malik/"><img src="Icon Folder/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                <a href="https://www.youtube.com/channel/UCgtdIGl4dm1Unb5WddtaEIg"><img src="Icon Folder/icons8-youtube-48.png" alt="YouTube"></a>
             </div>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2>More about me...</h2>
-            <p>As a BSc (Hons) Computing student specializing in Cyber Security and Web Development. (WIP)</p>
+            <h2>About Me</h2>
+            <p>I'm a final-year BSc (Hons) Computing student specializing in Cyber Security and Web Development, focused on Network Security. I'm seeking a summer internship to apply my skills and tackle real-world challenges.</p>
+        </div>
+    </section>
+
+    <section id="dissertation">
+        <div class="container">
+            <h2>Dissertation Project</h2>
+            <p>Currently working on implementing Zero Trust principles using IAM and MFA in an AWS cloud environment to secure web applications.</p>
+            <a href="https://github.com/EXL-1" class="cta-button">View on GitHub</a>
         </div>
     </section>
 
     <section id="journey">
         <div class="container">
-            <h3>Additional Sections to arrive in 2025. . .</h3>
-            <p>To see more of my projects check out my <a href="https://github.com/EXL-1">Github</a> page.</p>
-            <!-- Add content for the My Journey section here -->
+            <h3>Coming in 2025</h3>
+            <p>For more information about my journey, check out my <a href="https://github.com/EXL-1">GitHub</a> page for projects and updates.</p>
         </div>
     </section>
 
     <footer>
         <div class="container-footer">
             <p>&copy; Lucas Malik 2024</p>
-            <a href="https://github.com/EXL-1/Portfolio-Website" target="_blank" >Website Source Code</a>
+            <a href="https://github.com/EXL-1/Portfolio-Website">Website Source Code</a>
         </div>
     </footer>
 
     <script src="JS Files/main.js"></script>
-
 </body>
 
 </html>

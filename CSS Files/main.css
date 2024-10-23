@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +6,15 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c1c1c;
     color: white;
-    background-color: #000;
 }
 
+/* Header */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
+    background: linear-gradient(90deg, #2c2c2c, #1c1c1c);
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -28,9 +28,11 @@ header {
 }
 
 .Title-name a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .desktop-ul ul {
@@ -39,22 +41,27 @@ header {
 }
 
 .desktop-ul ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .desktop-ul ul li a {
-    color: white;
+    color: #e6e6e6;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.desktop-ul ul li a:hover {
+    color: #fff;
 }
 
 .Journey-li a {
-    background-color: #df7e0f;
-    padding: 7.5px 15px;
-    border-radius: 20px;
+    background-color: #e87c03;
+    padding: 8px 20px;
+    border-radius: 25px;
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .toggle-button {
@@ -69,9 +76,19 @@ header {
     position: absolute;
     top: 60px;
     right: 2rem;
-    background-color: rgba(31, 30, 30, 0.8);
+    background-color: rgba(31, 30, 30, 0.9);
     border-radius: 10px;
-    overflow: hidden;
+    width: 200px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease, opacity 0.3s ease;
+    z-index: 100;
+}
+
+.dropdown-ul.open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .dropdown-ul ul {
@@ -80,7 +97,7 @@ header {
 }
 
 .dropdown-ul ul li {
-    margin: 7.5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -88,108 +105,169 @@ header {
     padding: 5px;
     color: white;
     text-decoration: none;
-    display: block;
 }
 
 .dropdown-ul ul li a:hover {
-    background-color: #51504f;
-    border-radius: 15px;
+    background-color: #e87c03;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Hero Section */
 #hero {
     height: 100vh;
-    background-image: url(../Photos/Space-Background.jpg);
-    background-size: cover;
-    background-position: center;
+    background: radial-gradient(circle, #2d2d2d, #1c1c1c);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
-    position: relative;
 }
 
-.profile-pic {
-    object-fit: cover;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+#hero h2 {
+    font-size: 3.2rem;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+#hero .subtitle {
+    font-size: 1.5rem;
+    color: #f5a623;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.social-icons img {
+    width: 48px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+#about {
+    background: #1c1c1c;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#dissertation {
+    background: #292929;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#dissertation h2 {
+    font-size: 2.5rem;
+    color: #fff;
     margin-bottom: 20px;
 }
 
-.hero-content h2 {
-    padding: 2px 0px;
-    font-size: 1.75rem;
-}
-
-.hero-content p {
-    padding: 6px 0px;
+#dissertation p {
     font-size: 1.2rem;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 
-.social-icons a img {
-    padding: 6px 0px;
-    width: 40px;
-    margin: 0 5px;
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #f5a623;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.social-icons a img:hover {
-    scale: 1.02;
-}
-
-/* About Section */
-#about {
-    padding: 40px 20px;
-    background: #111;
-    text-align: center;
-}
-
-#about .container h2 {
-    margin-bottom: 2rem;
+.cta-button:hover {
+    background-color: #e87c03;
 }
 
 /* Journey Section */
-
-#journey .container {
-    padding: 20px;
+#journey {
+    background: #202020;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 #journey h3 {
-    text-align: center;
-    padding: 10px 0 15px 0;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-#journey p{
-    text-align: center;
-    padding: 0 0 10px 0;
+#journey p {
+    font-size: 1.1rem;
+    color: #ccc;
 }
 
 #journey p a {
+    color: #f5a623;
     text-decoration: none;
-    color: rgb(215, 138, 14);
+}
+
+#journey p a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    background: #111;
+    background: #1c1c1c;
     padding: 20px;
-    color: #aaa;
+    text-align: center;
 }
 
-footer .container-footer {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
+footer p {
+    color: #999;
 }
 
 footer a {
-    
+    color: #f5a623;
     text-decoration: none;
-    color: rgb(107, 107, 224);
 }
 
-/* Responsive Styles */
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @media (max-width: 768px) {
+
+    .Title-name {
+        font-size: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 3rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+
     .toggle-button {
         display: block;
     }
@@ -197,26 +275,13 @@ footer a {
     .desktop-ul {
         display: none;
     }
-
-    .dropdown-ul.open {
-        display: block;
-    }
-
-    #hero {
-        padding: 20px;
-    }
-
-    .profile-pic {
-        width: 200px;
-        height: 200px;
-    }
-
-    #about p {
-        text-align: center;
-    }
-
 }
 
-@media (max-width: 480px) {
-    
+@media (min-width: 769px) {
+    .dropdown-ul {
+        display: none !important; 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
 }
+
