@@ -1,8 +1,11 @@
 # Lucas Malik's Portfolio Website 
 
-Check out the Website: https://lmfl.synology.me/
+Explore my portfolio: https://lmfl.synology.me/
 
-Built with HTML, CSS and JS.
+This website is built using HTML, CSS, and JavaScript, showcasing my work in Cyber Security, Web Development, and Network Security.
 
-Additional Sections will be added in 2025.
+Upcoming Updates:
+Additional sections and features are planned for 2025 to further expand the content and functionality.
+
+
 
