@@ -7,6 +7,7 @@ This website showcases my work in Cybersecurity, Web Development, and Network Se
 
 ## Technology Stack
 Frontend: Built with HTML, CSS, and JavaScript.
+
 Hosting:  Deployed on a Synology NAS with Web Station, Nginx reverse proxy, and SSL encryption for enhanced security and efficient performance.
 
 ## Concept Designs
