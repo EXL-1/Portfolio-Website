@@ -134,7 +134,7 @@ header {
 #hero .subtitle {
     font-size: 1.5rem;
     color: #f5a623;
-    margin-bottom: 20px;
+    margin: 0 10px 15px 10px;
     animation: fadeIn 2s ease-in;
 }
 
