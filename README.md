@@ -7,6 +7,7 @@ This website showcases my work in Cybersecurity, Web Development, and Network Se
 
 ## Technology Stack
 Frontend: HTML, CSS, and JavaScript.
+
 Hosting:  Synology NAS (Web Station, Nginx reverse proxy)
 
 ## Concept Designs
