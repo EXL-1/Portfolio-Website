@@ -3,8 +3,6 @@
 ## Overview
 Explore my portfolio: https://lmfl.synology.me/
 
-This website showcases my work in Cybersecurity, Web Development, and Network Security.
-
 ## Technology Stack
 Frontend: HTML, CSS, and JavaScript.
 
